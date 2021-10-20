@@ -1,0 +1,175 @@
+
+1.PROGRAMS USING OPERATORS
+
+#include <stdio.h>
+
+void main()
+{
+   int a=5, b=6 ,result;
+   float c=10.5, d=100.5;
+   printf("\n%d %d" , a--, --b);
+   printf("\n%d %d" , a--, --b);
+   printf("\n%d %d ", a--, --b);
+   printf("\n%d %d ", a--, --b);
+   printf("\n%d %d ", a--, --b);
+   printf("\n++c = %f \n", ++c);
+   printf("--d = %f \n", --d);
+   
+
+   printf("%d ==%d is %d \n", a,b, a==b);
+   printf("%d ==%d is %d \n", a,c, a==c);
+   printf("%d >%d is %d \n", a,b, a>c);
+   printf("%d >%d is %d \n", a,c, a>c);
+   printf("%d <%d is %d \n", a,b, a<b);
+   printf("%d <%d is %d \n", a,c, a<c);
+   printf("%d !=%d is %d \n", a,b, a!=b);
+   printf("%d !=%d is %d \n", a,c, a!=c);
+   printf("%d >=%d is %d \n", a,b, a>=b);
+   
+   result = (a!=b)||(c<b);
+   printf("(a!=b)||(c<b) is %d\n",result);
+   result = (a==b)||(c<b);
+   printf("(a==b)||(c<b) is %d\n",result);
+   result = !(a!=b);
+   printf("!(a==b)is %d\n",result);
+   
+   
+}
+
+2.LINEAR DATATYPES
+
+
+#include<stdio.h>
+int main()
+{
+    int num = 5;
+    float num1 = 12.5;
+    double num2 = 13.6;
+    char chr = 'a';
+    int integer;
+    float decimal;
+    double num3;
+    char asc;
+    printf("num = %d\n",num);
+    printf("num = %f\n",num1);
+    printf("num = %lf\n",num2);
+    printf("character = %c\n",chr);
+    printf("Enter an integer:");
+    scanf("%d",&integer);
+    printf("The integer is %d\n",integer);
+    printf("Enter an float:");
+    scanf("%f",&decimal);
+    printf("The float is %f\n",decimal);
+    printf("Enter an double:");
+    scanf("%lf",&num3);
+    printf("The double is %lf\n",num3);
+    printf("Enter a character:");
+    scanf(" %c",&asc);
+    printf("The selected character is %c\n",asc);
+    printf("ASCII value is %d\n",asc);
+    return 0;
+}
+
+3. SIMPLE CALCULATOR
+
+#include<stdio.h>
+main()
+{
+	float a,b;
+	char op;
+	float res;
+	printf("enter operands\n");
+	scanf("%f%f",&a,&b);
+	printf("enter operator\n");
+	scanf("%s",&op);
+	switch(op)
+	{
+		case '+':res=a+b;
+		printf("sum=%f\n",res);
+		break;
+		case '-':res=a-b;
+		printf("difference=%f\n",res);
+		break;
+		case '*':res=a*b;
+		printf("product=%f",res);
+		break;
+		case '/':if(b!=0)
+		{
+			res=a/b;
+			printf("quotient=%f",res);
+		}
+		else
+		{
+			printf("divide by zero error\n");
+		}
+		break;
+		default:printf("invalid error\n");
+		break;
+	}
+
+}
+
+
+
+4. CALCULATOR USING LOOP STATEMENTS
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+        int i;
+	float a,b;
+	char op;
+	float res;
+	for(i=1;i>=0;++i)
+        {
+	printf("enter operands\n");
+	scanf("%f%f",&a,&b);
+	printf("enter operator\n");
+	scanf("%s",&op);
+	switch(op)
+	{
+		case '+':res=a+b;
+		printf("sum=%f\n",res);
+		break;
+		case '-':res=a-b;
+		printf("difference=%f\n",res);
+		break;
+		case '*':res=a*b;
+		printf("product=%f",res);
+		break;
+		case '/':if(b!=0)
+		{
+			res=a/b;
+			printf("quotient=%f",res);
+		}
+		else
+		{
+			printf("divide by zero error\n");
+		}
+		break;
+		default:printf("invalid error\n");
+		exit (0);
+		break;
+	}
+}
+}
+
+5.   CALCULATE SQUARE ROOT 
+
+#include <stdio.h>
+main() 
+{ 
+	int i; 
+	float x,n; 
+	printf("Enter a positive integer"); 
+	scanf("%f",&n); 
+	x=n; 
+	for(i=0;i<10;i++) 
+	{ 
+		x=(x*x+n)/(2*x); 
+	} 
+	printf("The calculated square root is=%f\n",x); 
+}
+
+
