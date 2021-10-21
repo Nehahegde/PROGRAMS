@@ -1,2 +1,2 @@
-# cps
+# c-pragram
 basic programs
