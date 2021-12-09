@@ -1,14 +1,14 @@
 
 
-#include&lt;stdio.h&gt;
-#include&lt;stdlib.h&gt;
+#include<stdio.h>;
+#include<stdlib.h>;
 int n,a[10],ELEM,pos,j;
 void create()
 {
 printf("Enter the number of elements\n");
 scanf("%d",&n);
 printf("Enter the array elements are\n");
-for(j=0;j&lt;n;j++)
+for(j=0;j<n;j++)
 {
 scanf("%d",&a[j]);
 }
@@ -17,14 +17,14 @@ void display()
 {
 if(n==0)
 {
-printf(&quot;Empty array\n&quot;);
+printf("Empty array\n");
 }
 else
 {
-printf(&quot;The array elements are\n&quot;);
+printf("The array elements are\n");
 for(j=0;j&lt;n;j++)
 {
-printf(&quot;%d\t&quot;,a[j]);
+printf("%d\t",a[j]);
 }
 }
 }
