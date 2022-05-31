@@ -1,2 +1,2 @@
 # c-pragram
-basic programs
+Simple c programs
